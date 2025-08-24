@@ -1,0 +1,1 @@
+# can be treated as package in "first" project

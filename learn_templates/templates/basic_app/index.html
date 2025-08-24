@@ -1,0 +1,14 @@
+
+{% extends 'basic_app/base.html' %}
+{% load my_extras %}
+    {% block body_block %}
+    <h1>Welcome to home page </h1>
+    <h3> This is index page using templates </h3>
+    <h5>
+        This text got cut using custom filters: 
+        {{text | cut:'ello'}}
+    </h5>
+    <p>       
+        The sum of {{num}} and 765 is {{num | add:765}}.<br>
+    </p>
+    {% endblock %}
